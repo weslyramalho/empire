@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Card from "../Card";
 import Logo from "../Logo";
 import { MenuWrapper } from "./styles/MenuWrapper";
 
@@ -111,9 +112,76 @@ align-self: center
 
 `;
 
+const LogK = styled.div`
+background-image: url('../img/king.svg');
+position: absolute;
+width: 463px;
+height: 58px;
+left: 376.35px;
+top: 198.04px;
+`;
+const LgkF = styled.div`
+background-image: url('../img/Fraz.svg');
+
+position: absolute;
+width: 382px;
+height: 22px;
+left: 376.35px;
+top: 286.76px;
+`
+const Retangulo = styled.div`
+background-image: url('../img/Rectangle.svg');
+position: absolute;
+width: 201.85px;
+height: 30.67px;
+left: 560px;
+top: 282px;
+
+`
+const SupPK = styled.div`
+background-image: url('../img/Uma.svg');
+position: absolute;
+width: 231px;
+height: 23px;
+left: 376.35px;
+top: 167px;
+`
+
+const BtnComprar = styled.button`
+background-image: url('../img/Frame8.svg');
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10.1605px 20.3209px;
+gap: 12.7px;
+
+position: absolute;
+width: 198.64px;
+height: 52.32px;
+left: 375px;
+top: 333.1px;
+border-style:none;
+background-color: transparent;
+`
+const Sec2 = styled.section`
+display: flex;
+position: absolute;
+width: 970px;
+height: 118.54px;
+left: 475px;
+top: 494.23px;
+
+background: #FFFFFF;
+/* Shadow */
+
+box-shadow: 0px 4px 40px rgba(179, 155, 132, 0.5);
+border-radius: 10px;
+`
+
 export default function Menu(){
 
 return(
+    <>
     <Sec>
     <MenuWrapper>
         <CostLogo>
@@ -129,10 +197,19 @@ return(
         <B2 />
         <B3 />
         <B4 />
-       
-    
-        
     </MenuWrapper>
+    <SupPK />
+    <LogK />
+    
+    <Retangulo />
+    <LgkF />
+    <BtnComprar />
+
     </Sec>
+    <Sec2>
+    <Card />
+    </Sec2>
+
+    </>
 )
 }

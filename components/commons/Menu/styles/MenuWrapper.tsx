@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const MenuWrapper=styled.nav`
 position: absolute;
+display: flex;
 width: 100%;
 height: 63.87px;
 left: 0px;
