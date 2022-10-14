@@ -19,4 +19,9 @@
     "gh-pages": "^4.0.0",
     "typescript": "^4.7.4"
   }
+  "homepage": "https://weslyramalho.github.io/empire",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+},
 }
